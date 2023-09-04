@@ -17,7 +17,7 @@ change the mysql username and password in config/default.json
 }
 Import the database, use the sql file in DB folder
 type npm run serve to start the server 
-when starting the server a super admin user wll automattically create with the following Email and Password
+when starting the server  admin user wll automattically create with the following Username and Password
 {
     "Username": "admin",
     "Password": "#Admin123"
