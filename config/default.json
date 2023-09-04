@@ -1,0 +1,11 @@
+{
+    "port": 3001,
+    "database": {
+      "mysql": {
+        "host": "localhost",
+        "username": "user",
+        "password": "123",
+        "dbName": "IssueTracker"
+      }
+    }
+}

@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "e624f1e5-d2ca-4dd2-b783-2d16bbc3c14c",
+		"name": "IssueTracker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14617626"
+	},
+	"item": [
+		{
+			"name": "Project",
+			"item": [
+				{
+					"name": "Project save",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6NSwiVXNlcm5hbWUiOiJhZG1pbiIsImlhdCI6MTY5MzY0MTUxMCwiZXhwIjoxNjk5NjQxNTEwLCJzdWIiOiJhZG1pbiJ9.zNl7ctw7XU2Byztgf1XQup25a_Q1w93CAwOk9LegPXI9mOKIbaWk3vADxzHPmgUmtpLlK7OCimvW88Hf0MPLMyFwEHekWJwiHYALwUKESMO0fcRFuFy0TCWelTB2Q-HERBw6jycNY7wriKiV0OrLlIXck31gu6aK97AZteIGj_Vcx_jCD92vEKwSFYndZIzPUvFjJXrz_kyEIh98eglIzgxd3WHNVKSy_cE7Xr75HcTENt5de3hRs0lWUwEnS88iHSW2xK-ltdo4Rh65b-7xZ7R4L2bDlmoekxrnO58QYVogiy1NTPqL-vPkhY7cC95oARmYzOtb4xsvN4fglYe1qw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ID\":2,\n    \"Name\":\"1111\",\n    \"Description\":\"sd\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/project/save",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"project",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Project List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/project/list",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"project",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProjectDetails",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "CheckStatus",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Issue",
+			"item": [
+				{
+					"name": "issueList",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "IssueSave",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
